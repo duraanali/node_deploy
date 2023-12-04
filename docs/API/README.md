@@ -67,7 +67,7 @@ Authenticate an owner and generate an access token.
     "message": "Owner logged in successfully",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwiaWF0IjoxNTE2MjM5MDIyfQ.3vaHj7Jp9pccV-7T-nLkJJ8vOwHJc5IzjNoy4z-6ZJg"
   }
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
