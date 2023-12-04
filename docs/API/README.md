@@ -27,14 +27,14 @@ Create a new owner account.
       "email": "john@example.com"
     }
   }
-  ```
+  
 
 - **Error**: 409 Conflict
   ````json
   {
     "message": "Owner already exists"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
@@ -42,7 +42,7 @@ Create a new owner account.
     "message": "Something went wrong",
     "error": "Error message"
   }
-  ```
+  
 
 ## Owner Login
 
@@ -74,14 +74,14 @@ Authenticate an owner and generate an access token.
   {
     "message": "Owner not found"
   }
-  ```
+
 
 - **Error**: 401 Unauthorized
   ````json
   {
     "message": "Invalid credentials"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
@@ -89,7 +89,7 @@ Authenticate an owner and generate an access token.
     "message": "Something went wrong",
     "error": "Error message"
   }
-  ```
+  
 
 Note: The access token returned in the response should be included in the `Authorization` header of subsequent requests as a bearer token for authentication.
 
@@ -119,21 +119,21 @@ Retrieve all ratings.
       "comment": "Average product"
     }
   ]
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "ratings not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to get ratings"
   }
-  ```
+  
 
 ## Get Single Rating
 
@@ -158,21 +158,21 @@ Retrieve a single rating by ID.
     "rating": 4.5,
     "comment": "Great product"
   }
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "rating not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to get rating"
   }
-  ```
+  
 
 ## Add Rating
 
@@ -213,21 +213,21 @@ Retrieve all ratings.
       "comment": "Average product"
     }
   ]
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "ratings not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to get ratings"
   }
-  ```
+  
 
 ## Get Single Rating
 
@@ -252,21 +252,20 @@ Retrieve a single rating by ID.
     "rating": 4.5,
     "comment": "Great product"
   }
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "rating not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to get rating"
   }
-  ```
 
 ## Add Rating
 
@@ -292,21 +291,21 @@ Add a new rating.
     "rating": 4.2,
     "comment": "Good product"
   }
-  ```
+ 
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "rating not found"
   }
-  ```
+ 
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to add rating"
   }
-  ```
+ 
 
 ## Update Rating
 
@@ -338,21 +337,21 @@ Update an existing rating.
     "rating": 4.0,
     "comment": "Updated rating"
   }
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "rating not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to update rating"
   }
-  ```
+  
 
 ## Delete Rating
 
@@ -375,22 +374,23 @@ Delete a rating.
   {
     "message": "rating deleted"
   }
-  ```
+  
 
 - **Error**: 404 Not Found
   ````json
   {
     "message": "rating not found"
   }
-  ```
+  
 
 - **Error**: 500 Internal Server Error
   ````json
   {
     "message": "Failed to delete rating"
   }
-  ```
-  # Restaurant  
+  
+  
+# Restaurant  
 
 
 ## Endpoints
